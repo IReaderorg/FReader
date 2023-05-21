@@ -1,4 +1,5 @@
 
+import 'package:FReader/domain/extensions/sources.dart';
 import 'package:flutter/material.dart';
 
 class ExploreScreen extends StatelessWidget {
@@ -10,6 +11,11 @@ class ExploreScreen extends StatelessWidget {
       appBar: AppBar(
         title:Text( "Explore"),
       ),
+      body: ListView.builder(
+        itemCount: sources.length,
+        itemBuilder: (context, index) => ListTile(
+          leading: Text(sources[index].name),
+        ),),
     );
   }
 }

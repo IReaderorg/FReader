@@ -10,7 +10,7 @@ class LibraryController extends GetxController {
   @override
   void onInit() {
     _getData();
-    AppDatabaseHelper.instance.insert(Book(id: null,sourceId: 1, title: "Test Book", key: "https://www.google.com/", description: "fake desc"));
+   // AppDatabaseHelper.instance.insert(Book(id: null,sourceId: 1, title: "Test Book", key: "https://www.google.com/", description: "fake desc"));
     super.onInit();
   }
   void _getData() {
